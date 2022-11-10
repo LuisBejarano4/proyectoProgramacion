@@ -26,13 +26,13 @@ public class Cuenta {
      * @return El objeto cuenta.
      */
     public Cuenta deserializar(String json){
-        Cuenta cuentaCliente = new Cuenta();
+        Cuenta cuenta = new Cuenta();
         try{
-            cuentaCliente = new Gson().fromJson(json, Cuenta.class);
+            cuenta = new Gson().fromJson(json, Cuenta.class);
         }catch(Exception ex){
             System.err.print("Ocurrió un error" + ex.getMessage());
         }
-        return cuentaCliente;
+        return cuenta;
     }
     /**
      * Añade movimientos a mis movimientos filtrados a partir de la seleccion del mes.
