@@ -4,6 +4,7 @@
  */
 package mx.itson.catrina.entidades;
 
+//import com.google.gson.Gson;
 import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.List;
